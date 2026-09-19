@@ -1,0 +1,115 @@
+/* Aumora hero concept. Scoped to the homepage header and first section. */
+.aumora-home { --hero-ice:#E8F0FF; --hero-ember:#F4BA88; }
+.aumora-header { position:absolute; inset:0 0 auto; z-index:100; color:var(--hero-ice); }
+.aumora-shell { width:calc(100% - clamp(40px,8vw,160px)); max-width:1760px; margin-inline:auto; }
+.aumora-header-inner { min-height:116px; display:flex; align-items:center; justify-content:space-between; gap:32px; border-bottom:1px solid #e8f0ff20; }
+.aumora-wordmark { display:block; width:210px; flex-shrink:0; }
+.aumora-wordmark img { width:100%; height:auto; transform-origin:50% 50%; animation:aumora-mark-drift 18s ease-in-out infinite; }
+.aumora-nav { display:flex; align-items:center; gap:38px; }
+.aumora-nav > a { font-size:11px; letter-spacing:.15em; text-transform:uppercase; font-weight:600; transition:color .2s; }
+.aumora-nav > a:hover { color:var(--hero-ember); }
+.aumora-nav .aumora-nav-cta { border:1px solid #e8f0ff70; padding:14px 22px; border-radius:100px; margin-left:28px; background:#080d1438; }
+.aumora-nav-cta span { margin-left:20px; font-size:18px; }
+.aumora-menu { display:none; min-width:46px; min-height:46px; border:1px solid #e8f0ff50; border-radius:50%; color:var(--hero-ice); background:#080d1480; cursor:pointer; }
+.aumora-home a:focus-visible,.aumora-home button:focus-visible { outline:2px solid #F4BA88; outline-offset:6px; }
+.aumora-hero { position:relative; isolation:isolate; overflow:hidden; min-height:800px; height:100svh; max-height:1200px; color:var(--hero-ice); background:#080D14; display:flex; flex-direction:column; justify-content:center; }
+.aumora-scene { position:absolute; inset:-5%; z-index:0; margin:0; pointer-events:none; transform:scale(1.08); transform-origin:50% 50%; animation:aumora-scene-orbit 180s linear infinite; }
+.aumora-scene img { width:100%; height:100%; object-fit:cover; object-position:58% 50%; max-width:none; }
+.aumora-hero::before { content:""; position:absolute; inset:0; z-index:1; pointer-events:none; background:linear-gradient(90deg,#080d14b8 0%,#080d1450 35%,transparent 68%),linear-gradient(0deg,#080d14f2 0%,transparent 24%,transparent 78%,#080d14a8 100%); }
+.aumora-hero::after { content:""; position:absolute; inset:-8%; z-index:5; pointer-events:none; background:radial-gradient(ellipse at 52% 46%, transparent 36%, rgba(8,13,20,.16) 66%, rgba(8,13,20,.72) 100%),linear-gradient(180deg,rgba(8,13,20,.16),transparent 24%,transparent 72%,rgba(8,13,20,.3)); mix-blend-mode:multiply; }
+.aumora-hero-content { position:relative; z-index:6; padding-top:65px; padding-bottom:65px; }
+.aumora-copy { width:46%; max-width:680px; }
+.aumora-kicker { display:flex; align-items:center; gap:13px; color:#c4d1e2; margin:0 0 29px; font-size:10px; font-weight:600; text-transform:uppercase; letter-spacing:.23em; }
+.aumora-kicker::before { content:""; width:6px; height:6px; background:#f4ba88; box-shadow:0 0 17px #f4ba8880; border-radius:50%; flex:none; }
+.aumora-title { font-size:clamp(60px,6.25vw,108px); font-weight:500; letter-spacing:-.065em; line-height:1.045; margin:0; }
+.aumora-title span { color:#b9cafa; }
+.aumora-description { font-size:clamp(16px,1.17vw,20px); line-height:1.7; color:#bfcbda; max-width:380px; margin:29px 0 0; }
+.aumora-actions { display:flex; align-items:center; gap:27px; margin-top:37px; }
+.aumora-primary { display:inline-flex; align-items:center; justify-content:space-between; gap:30px; min-height:53px; padding:0 25px; color:#111b2c; background:#edf2fb; border:1px solid #fff; border-radius:100px; font-size:11px; font-weight:650; letter-spacing:.075em; transition:background .2s,transform .2s; }
+.aumora-primary:hover { background:#f4ba88; transform:translateY(-2px); }
+.aumora-primary span { font-size:21px; font-weight:400; }
+.aumora-secondary { display:inline-flex; align-items:center; gap:13px; min-height:48px; font-size:11px; letter-spacing:.06em; border-bottom:1px solid #e8f0ff55; }
+.aumora-secondary:hover { color:#f4ba88; }
+.aumora-bottom { position:absolute; z-index:7; bottom:34px; left:0; right:0; display:flex; align-items:flex-end; justify-content:space-between; gap:28px; }
+.aumora-capabilities { display:flex; gap:36px; }
+.aumora-capabilities a { display:grid; gap:6px; min-height:49px; padding-right:35px; border-right:1px solid #e8f0ff30; }
+.aumora-capabilities a:last-child { border:0; padding-right:0; }
+.aumora-capabilities small { font-size:9px; color:#9aaac0; letter-spacing:.14em; }
+.aumora-capabilities span { color:#d6e0ec; font-size:12px; letter-spacing:.025em; }
+.aumora-capabilities a:hover span { color:#f4ba88; }
+.aumora-scroll { display:flex; align-items:center; gap:19px; min-height:48px; color:#c8d4e4; text-transform:uppercase; letter-spacing:.17em; font-size:9px; }
+.aumora-scroll span { font-size:20px; }
+
+.aumora-category-object { position:absolute; z-index:2; display:grid; justify-items:center; gap:8px; color:#d6e0ec; opacity:.8; filter:drop-shadow(0 14px 20px rgba(0,0,0,.3)); animation:category-float 8s ease-in-out infinite; }
+.aumora-category-object small { color:#b9cafa; font-size:9px; font-weight:650; letter-spacing:.16em; text-transform:uppercase; text-shadow:0 1px 12px #080d14; }
+.object-glyph { position:relative; display:block; width:58px; height:42px; border:1px solid rgba(232,240,255,.7); background:linear-gradient(145deg,rgba(185,202,250,.4),rgba(24,39,65,.7)); box-shadow:inset 0 0 18px rgba(185,202,250,.18),0 0 24px rgba(120,140,255,.16); }
+.object-games { left:25%; top:25%; animation-delay:-1s; transform:rotate(-10deg); }
+.object-games .object-glyph { border-radius:20px 20px 15px 15px; transform:perspective(120px) rotateX(10deg); }
+.object-games .object-glyph::before { content:""; position:absolute; width:13px; height:3px; left:13px; top:19px; background:#f4ba88; box-shadow:8px 0 #f4ba88; }
+.object-games .object-glyph::after { content:""; position:absolute; width:5px; height:5px; right:13px; top:14px; border:1px solid #f4ba88; border-radius:50%; box-shadow:8px 5px 0 -1px #f4ba88; }
+.object-software { right:18%; top:22%; animation-delay:-4s; transform:rotate(7deg); }
+.object-software .object-glyph { width:70px; height:43px; border-radius:4px; transform:perspective(130px) rotateY(-12deg) rotateX(4deg); }
+.object-software .object-glyph::after { content:""; position:absolute; left:-7px; right:-7px; bottom:-7px; height:5px; border:1px solid rgba(232,240,255,.55); background:#53678f; transform:skewX(-28deg); }
+.object-applications { left:17%; bottom:29%; animation-delay:-6s; transform:rotate(-8deg); }
+.object-applications .object-glyph { width:29px; height:55px; border-radius:6px; transform:perspective(130px) rotateY(14deg); }
+.object-applications .object-glyph::before { content:""; position:absolute; left:6px; right:6px; top:7px; height:2px; background:#f4ba88; box-shadow:0 10px rgba(185,202,250,.8),0 20px rgba(185,202,250,.5); }
+.object-web3 { right:24%; bottom:27%; animation-delay:-3s; transform:rotate(11deg); }
+.object-web3 .object-glyph { width:46px; height:46px; border-radius:8px; transform:rotate(45deg) skew(-8deg,-8deg); background:linear-gradient(135deg,rgba(244,186,136,.65),rgba(44,55,93,.8)); }
+.object-web3 .object-glyph::before,.object-web3 .object-glyph::after { content:""; position:absolute; inset:9px; border:1px solid rgba(232,240,255,.7); }
+@keyframes category-float { 0%,100% { translate:0 0; } 50% { translate:0 -9px; } }
+@media(min-width:1800px) { .aumora-copy { width:45%; } }
+@media(min-width:901px) and (max-width:1100px) {
+  .aumora-nav { gap:22px; } .aumora-nav .aumora-nav-cta { margin-left:0; padding-inline:16px; }
+  .aumora-wordmark { width:170px; } .aumora-copy { width:51%; }
+  .aumora-title { font-size:clamp(58px,6.7vw,74px); }
+  .aumora-hero::before { background:linear-gradient(90deg,#080d14bd 0%,#080d1466 45%,transparent 80%),linear-gradient(0deg,#080d14 0%,transparent 28%); }
+  .aumora-capabilities { gap:20px; } .aumora-capabilities a { padding-right:20px; }
+}
+@media(max-width:900px) {
+  .aumora-header-inner { min-height:84px; }
+  .aumora-wordmark { width:159px; }
+  .aumora-menu { display:block; }
+  .aumora-nav { display:none; position:absolute; top:84px; left:0; right:0; min-height:calc(100svh - 84px); max-height:calc(100svh - 84px); overflow:auto; padding:35px 24px; background:#080d1afa; backdrop-filter:blur(18px); flex-direction:column; align-items:stretch; gap:0; }
+  .aumora-nav.is-open { display:flex; }
+  .aumora-nav > a { padding:18px 0; font-size:15px; border-bottom:1px solid #e8f0ff20; }
+  .aumora-nav .aumora-nav-cta { margin:27px 0 0; text-align:center; }
+  .aumora-hero { height:auto; max-height:none; min-height:950px; justify-content:flex-start; padding:0 0 30px; }
+  .aumora-scene { inset:77px 0 auto; height:395px; }
+  .aumora-scene img { object-position:76% 50%; }
+  .aumora-hero::before { background:linear-gradient(180deg,#080d1410 240px,#080d1400 310px,#080d14 475px); }
+  .aumora-hero-content { padding-top:439px; padding-bottom:28px; }
+  .aumora-copy { width:100%; max-width:550px; }
+  .aumora-kicker { font-size:8px; margin-bottom:20px; letter-spacing:.18em; }
+  .aumora-title { font-size:clamp(46px,11.8vw,76px); letter-spacing:-.055em; line-height:1.07; }
+  .aumora-description { font-size:15px; margin-top:21px; max-width:380px; }
+  .aumora-actions { gap:21px; margin-top:27px; flex-wrap:wrap; }
+  .aumora-primary { padding-inline:20px; gap:24px; font-size:10px; }
+  .aumora-secondary { font-size:10px; }
+  .aumora-bottom { position:relative; bottom:auto; flex-direction:column; align-items:stretch; gap:16px; }
+  .aumora-capabilities { gap:13px; justify-content:space-between; padding-top:23px; border-top:1px solid #e8f0ff25; }
+  .aumora-capabilities a { padding-right:13px; }
+  .aumora-capabilities span { font-size:10px; }
+  .aumora-capabilities small { font-size:8px; }
+  .aumora-scroll { align-self:flex-end; font-size:8px; }
+  .aumora-category-object { opacity:.7; transform:scale(.75); }
+  .object-games { left:8%; top:17%; }
+  .object-software { right:5%; top:14%; }
+  .object-applications { left:9%; bottom:12%; }
+  .object-web3 { right:8%; bottom:13%; }
+}
+@media(prefers-reduced-motion:reduce) { .aumora-home { scroll-behavior:auto; } .aumora-hero * { transition:none; } }
+
+@keyframes aumora-mark-drift {
+  0%, 100% { transform:rotate(-1deg); }
+  50% { transform:rotate(1deg); }
+}
+
+@keyframes aumora-scene-orbit {
+  from { transform:scale(1.08) rotate(0deg); }
+  to { transform:scale(1.08) rotate(360deg); }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  .aumora-wordmark img,
+  .aumora-scene { animation:none; }
+}
