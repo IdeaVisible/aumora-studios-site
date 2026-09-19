@@ -4,7 +4,7 @@
 .aumora-shell { width:calc(100% - clamp(40px,8vw,160px)); max-width:1760px; margin-inline:auto; }
 .aumora-header-inner { min-height:116px; display:flex; align-items:center; justify-content:space-between; gap:32px; border-bottom:1px solid #e8f0ff20; }
 .aumora-wordmark { display:block; width:210px; flex-shrink:0; }
-.aumora-wordmark img { width:100%; height:auto; transform-origin:50% 50%; animation:aumora-mark-drift 18s ease-in-out infinite; }
+.aumora-wordmark img { width:100%; height:auto; transform-origin:50% 50%; }
 .aumora-nav { display:flex; align-items:center; gap:38px; }
 .aumora-nav > a { font-size:11px; letter-spacing:.15em; text-transform:uppercase; font-weight:600; transition:color .2s; }
 .aumora-nav > a:hover { color:var(--hero-ember); }
@@ -13,7 +13,7 @@
 .aumora-menu { display:none; min-width:46px; min-height:46px; border:1px solid #e8f0ff50; border-radius:50%; color:var(--hero-ice); background:#080d1480; cursor:pointer; }
 .aumora-home a:focus-visible,.aumora-home button:focus-visible { outline:2px solid #F4BA88; outline-offset:6px; }
 .aumora-hero { position:relative; isolation:isolate; overflow:hidden; min-height:800px; height:100svh; max-height:1200px; color:var(--hero-ice); background:#080D14; display:flex; flex-direction:column; justify-content:center; }
-.aumora-scene { position:absolute; inset:-5%; z-index:0; margin:0; pointer-events:none; transform:scale(1.08); transform-origin:50% 50%; animation:aumora-scene-orbit 180s linear infinite; }
+.aumora-scene { position:absolute; inset:-5%; z-index:0; margin:0; pointer-events:none; transform:scale(1.08); transform-origin:50% 50%; }
 .aumora-scene img { width:100%; height:100%; object-fit:cover; object-position:58% 50%; max-width:none; }
 .aumora-hero::before { content:""; position:absolute; inset:0; z-index:1; pointer-events:none; background:linear-gradient(90deg,#080d14b8 0%,#080d1450 35%,transparent 68%),linear-gradient(0deg,#080d14f2 0%,transparent 24%,transparent 78%,#080d14a8 100%); }
 .aumora-hero::after { content:""; position:absolute; inset:-8%; z-index:5; pointer-events:none; background:radial-gradient(ellipse at 52% 46%, transparent 36%, rgba(8,13,20,.16) 66%, rgba(8,13,20,.72) 100%),linear-gradient(180deg,rgba(8,13,20,.16),transparent 24%,transparent 72%,rgba(8,13,20,.3)); mix-blend-mode:multiply; }
