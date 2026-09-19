@@ -43,13 +43,8 @@ button { color: inherit; }
 
 .site-header { position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(18, 24, 34, .08); background: rgba(255,255,255,.91); backdrop-filter: blur(18px); }
 .header-inner { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
-.brand { display: inline-flex; align-items: center; gap: 12px; min-width: max-content; }
-.brand-mark { width: 42px; height: 42px; border: 1px solid rgba(18,24,34,.2); border-radius: 50%; display: grid; grid-template-columns: 1fr 1fr; place-items: center; overflow: hidden; font-weight: 800; font-size: 12px; letter-spacing: -.05em; position: relative; background: linear-gradient(145deg, #fff, #f1ecdf); }
-.brand-mark::after { content: ""; position: absolute; inset: 5px 50%; width: 1px; background: rgba(18,24,34,.16); }
-.brand-mark span:first-child { justify-self: end; padding-right: 2px; }
-.brand-mark span:last-child { justify-self: start; padding-left: 2px; color: var(--gold-dark); }
-.brand-name { font-size: 17px; font-weight: 750; letter-spacing: .04em; text-transform: uppercase; line-height: 1; }
-.brand-name small { display: block; margin-top: 5px; font-size: 9px; letter-spacing: .25em; color: var(--muted); }
+.brand { display: inline-flex; align-items: center; min-width: max-content; }
+.brand-logo { width: 72px; height: auto; flex: none; }
 .site-nav { display: flex; align-items: center; gap: 24px; }
 .nav-link { font-size: 14px; font-weight: 650; color: #394350; position: relative; }
 .nav-link::after { content: ""; position: absolute; height: 2px; left: 0; right: 100%; bottom: -9px; background: var(--gold); transition: right .22s ease; }
@@ -176,9 +171,7 @@ p { margin-top: 0; }
 .site-footer { padding: 80px 0 28px; background: #090f17; color: white; }
 .footer-grid { display: grid; grid-template-columns: 1.45fr repeat(3, 1fr); gap: 55px; }
 .brand-footer { margin-bottom: 22px; }
-.brand-footer .brand-mark { background: transparent; border-color: rgba(255,255,255,.25); }
-.brand-footer .brand-mark::after { background: rgba(255,255,255,.2); }
-.brand-footer .brand-name small { color: var(--muted-light); }
+.brand-footer .brand-logo { width: 108px; }
 .footer-grid p { color: var(--muted-light); max-width: 330px; }
 .footer-grid h2 { margin: 3px 0 18px; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: #d7bd82; }
 .footer-grid > div:not(:first-child) > a { display: block; padding: 5px 0; color: #c8d0d8; font-size: 14px; }
@@ -363,7 +356,8 @@ input:focus, select:focus, textarea:focus { border-color: var(--gold); box-shado
   .shell { width: min(calc(100% - 28px), var(--max)); }
   .header-inner { min-height: 70px; }
   .site-nav { inset: 71px 0 auto 0; height: calc(100vh - 71px); }
-  .brand-mark { width: 38px; height: 38px; }
+  .brand-logo { width: 64px; }
+  .brand-footer .brand-logo { width: 92px; }
   .hero-home { min-height: auto; }
   .hero-grid { padding-block: 75px 85px; }
   .hero-copy h1, .page-hero h1 { font-size: clamp(43px, 13vw, 64px); }
@@ -412,16 +406,6 @@ body:not(.aumora-home) .site-header {
   background: rgba(8, 13, 20, .88);
   color: #e8f0ff;
 }
-
-body:not(.aumora-home) .brand-mark {
-  border-color: rgba(232, 240, 255, .35);
-  background: linear-gradient(145deg, #17233b, #080d14);
-  color: #e8f0ff;
-}
-
-body:not(.aumora-home) .brand-mark::after { background: rgba(232, 240, 255, .22); }
-body:not(.aumora-home) .brand-mark span:last-child { color: #f4ba88; }
-body:not(.aumora-home) .brand-name small { color: #9aaac0; }
 body:not(.aumora-home) .nav-link { color: #c4d1e2; }
 body:not(.aumora-home) .nav-link.is-current { color: #f4f6fa; }
 body:not(.aumora-home) .nav-link::after { background: #f4ba88; }
