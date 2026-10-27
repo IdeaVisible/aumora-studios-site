@@ -30,7 +30,7 @@ Then visit `http://localhost:8000` from inside this folder.
 - `privacy-policy.html` — studio-wide privacy policy for Aumora products and services
 - `privacy-policy-gardenhold.html` — Gardenhold Android 1.0.1 (code 3) closed-test supplement
 - `privacy-policy-temple-topple.html` — Temple Topple Android 1.03 (code 103) closed-test supplement
-- `privacy-policy-pew-pew-vroom-vroom.html` — product supplement for version 1.03's closed test
+- `privacy-policy-pew-pew-vroom-vroom.html` — product supplement for Android version 1.08 (code 109)
 
 ## Internal planning page
 
@@ -53,7 +53,7 @@ Use `privacy-policy.html` as the shared privacy URL for Aumora games, apps, webs
 
 The policy describes feature-dependent categories without asserting that every product has accounts, advertising, analytics, purchases or cloud storage. Product notices must identify the actual data, purposes and lawful bases, providers, retention arrangements, international transfers, audience protections and user controls for each relevant release. Match these disclosures to the implementation and store declarations before publishing. Confirm the responsible legal entity and contact details, including any address or representative details required for the relevant jurisdiction; the policy retains the existing `games@aumorastudios.com` contact.
 
-The Pew Pew Vroom Vroom supplement preserves the existing version 1.03 closed-test disclosures dated 18 September 2026. Those settings have not been revalidated against game source code in this repository and should not be treated as statements about later releases. Link future supplements from the main policy and make each available from the relevant product.
+The Pew Pew Vroom Vroom supplement was updated on 27 October 2026 for Android version 1.08 (code 109), using the prepared release disclosure at `C:/Gamedev/vroompew/release/privacypolicy.html` and the verified release build report. It describes live AdMob ad units, UMP consent and privacy options, optional Google Play purchases, and local purchase receipts and delivery records. Keep it aligned with the applicable game release and store declarations; these details should not be assumed to apply to other versions. The shared studio policy and other games' supplements remain in place.
 
 The Gardenhold and Temple Topple supplements were checked on 23 October 2026 against the local projects at `C:/Gamedev/gardenhold` and `C:/Gamedev/temple-topple`: runtime save/settings code, in-game privacy notices, `release/android.json`, export scripts and generated release Android manifests. The applicable Android versions are Gardenhold 1.0.1 (code 3) and Temple Topple 1.03 (code 103); older engine-project version labels do not identify those Android releases. Both releases use local saves, request no Android permissions, disable standard Android cloud backup and have no ads, billing, accounts or analytics. Device-to-device migration can still depend on the Android device manufacturer.
 
