@@ -13,34 +13,32 @@
 <body class="" data-page="privacy-policy.html">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header" data-header>
-    <div class="shell header-inner">
-      <a class="brand" href="index.html" aria-label="Aumora Studios home">
-        <img class="brand-logo" src="assets/aumora-logo-white.svg" alt="Aumora Studios" width="856" height="746">
-      </a>
-      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-toggle>
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="site-nav" aria-label="Primary navigation" data-site-nav>
-        <div class="nav-services-wrap">
-          <a class="nav-link" href="services.html" data-nav-file="services.html">Services</a>
-          <div class="service-menu" aria-label="Service pages">
-            <a href="services.html"><span>Services overview</span><small>All four practices</small></a>
-            <a href="application-development.html"><span>Application Development</span><small>Custom platforms, tools and automation</small></a>
-            <a href="web3-development.html"><span>Web3 Development</span><small>EVM products and integrations</small></a>
-            <a href="game-development.html"><span>Video Game Development</span><small>Games, systems and live operations</small></a>
-            <a href="interactive-experiences.html"><span>Interactive Experiences</span><small>Participatory digital products</small></a>
-            <a href="support-maintenance.html"><span>Support &amp; Maintenance</span><small>Ongoing care and evolution</small></a>
-          </div>
-        </div>
-        <a class="nav-link home-link" href="index.html" data-nav-file="index.html">Home</a>
-        <a class="nav-link" href="projects.html" data-nav-file="projects.html">Work</a>
-        <a class="nav-link" href="engagement-models.html" data-nav-file="engagement-models.html">Engagement</a>
-        <a class="nav-link" href="about.html" data-nav-file="about.html">About</a>
-        <a class="nav-link" href="contact.html" data-nav-file="contact.html">Contact</a>
-        <a class="button button-small nav-cta" href="contact.html">Start a project</a>
-      </nav>
-    </div>
-  </header>
+      <div class="shell header-inner">
+        <a class="brand" href="index.html" aria-label="Aumora Studios home">
+          <img class="brand-logo" src="assets/aumora-logo-white.svg" alt="Aumora Studios" width="856" height="746">
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation" data-menu-toggle>
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="site-navigation" aria-label="Primary navigation" data-site-nav>
+          <a class="nav-link home-link" href="index.html" data-nav-file="index.html">Home</a>
+          <details class="nav-services-wrap" data-services-menu>
+            <summary class="nav-link" data-services-toggle>Services<span class="nav-chevron" aria-hidden="true"></span></summary>
+            <div class="service-menu" aria-label="Services">
+              <a href="application-development.html" data-nav-file="application-development.html"><span>Application Development</span><small>Custom software, portals and automation</small></a>
+              <a href="web3-development.html" data-nav-file="web3-development.html"><span>Web3 Development</span><small>Smart contracts, wallets and on-chain products</small></a>
+              <a href="game-development.html" data-nav-file="game-development.html"><span>Video Game Development</span><small>Playable prototypes, full games and live updates</small></a>
+              <a href="interactive-experiences.html" data-nav-file="interactive-experiences.html"><span>Interactive Experiences</span><small>Branded worlds, learning and simulations</small></a>
+              <a href="support-maintenance.html" data-nav-file="support-maintenance.html"><span>Support &amp; Maintenance</span><small>Ongoing care, fixes and product improvements</small></a>
+            </div>
+          </details>
+          <a class="nav-link" href="projects.html" data-nav-file="projects.html">Portfolio</a>
+          <a class="nav-link" href="engagement-models.html" data-nav-file="engagement-models.html">Engagement</a>
+          <a class="nav-link" href="about.html" data-nav-file="about.html">About</a>
+          <a class="button button-small nav-cta" href="contact.html#project-form">Reach Out</a>
+        </nav>
+      </div>
+    </header>
 
   <main id="main">
     <section class="page-hero legal-hero">
@@ -185,7 +183,7 @@
         <a class="brand brand-footer" href="index.html" aria-label="Aumora Studios home">
           <img class="brand-logo" src="assets/aumora-logo-white.svg" alt="Aumora Studios" width="856" height="746">
         </a>
-        <p>Custom software, games and interactive products, built as durable systems rather than disposable demos.</p>
+        <p>Custom software, games and interactive products built for reliable, long-term use.</p>
       </div>
       <div>
         <h2>Services</h2>
@@ -196,8 +194,8 @@
       </div>
       <div>
         <h2>Studio</h2>
-        <a href="projects.html">Current Projects</a>
-        <a href="engagement-models.html">Engagement Models</a>
+        <a href="projects.html">Portfolio</a>
+        <a href="engagement-models.html">Engagement</a>
         <a href="support-maintenance.html">Support &amp; Maintenance</a>
         <a href="about.html">About</a>
       </div>
@@ -209,7 +207,7 @@
     </div>
     <div class="shell footer-base">
       <span>&copy; <span data-year></span> Aumora Studios.</span>
-      <span class="footer-meta"><a href="privacy-policy.html">Privacy policy</a> · <a href="summary.html">Website blueprint</a></span>
+      <span class="footer-meta"><a href="privacy-policy.html">Privacy policy</a></span>
     </div>
   </footer>
 </body>

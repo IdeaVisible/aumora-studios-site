@@ -1,12 +1,12 @@
 /* Aumora hero concept. Scoped to the homepage header and first section. */
-.aumora-home { --hero-ice:#E8F0FF; --hero-ember:#F4BA88; }
+.aumora-home, .home-page { --hero-ice:#E8F0FF; --hero-ember:#F4BA88; }
 .aumora-header { position:absolute; inset:0 0 auto; z-index:100; color:var(--hero-ice); }
 .aumora-shell { width:calc(100% - clamp(40px,8vw,160px)); max-width:1760px; margin-inline:auto; }
 .aumora-header-inner { min-height:116px; display:flex; align-items:center; justify-content:space-between; gap:32px; border-bottom:1px solid #e8f0ff20; }
 .aumora-wordmark { display:block; width:92px; flex-shrink:0; }
 .aumora-wordmark img { width:100%; height:auto; transform-origin:50% 50%; }
 .aumora-nav { display:flex; align-items:center; gap:38px; }
-.aumora-nav > a { font-size:11px; letter-spacing:.15em; text-transform:uppercase; font-weight:600; transition:color .2s; }
+.aumora-nav > a { font-size:16px; letter-spacing:.15em; text-transform:uppercase; font-weight:600; transition:color .2s; }
 .aumora-nav > a:hover { color:var(--hero-ember); }
 .aumora-nav .aumora-nav-cta { border:1px solid #e8f0ff70; padding:14px 22px; border-radius:100px; margin-left:28px; background:#080d1438; }
 .aumora-nav-cta span { margin-left:20px; font-size:18px; }
@@ -19,29 +19,29 @@
 .aumora-hero::after { content:""; position:absolute; inset:-8%; z-index:5; pointer-events:none; background:radial-gradient(ellipse at 52% 46%, transparent 36%, rgba(8,13,20,.16) 66%, rgba(8,13,20,.72) 100%),linear-gradient(180deg,rgba(8,13,20,.16),transparent 24%,transparent 72%,rgba(8,13,20,.3)); mix-blend-mode:multiply; }
 .aumora-hero-content { position:relative; z-index:6; padding-top:65px; padding-bottom:65px; }
 .aumora-copy { width:46%; max-width:680px; }
-.aumora-kicker { display:flex; align-items:center; gap:13px; color:#c4d1e2; margin:0 0 29px; font-size:10px; font-weight:600; text-transform:uppercase; letter-spacing:.23em; }
+.aumora-kicker { display:flex; align-items:center; gap:13px; color:#c4d1e2; margin:0 0 29px; font-size:16px; font-weight:600; text-transform:uppercase; letter-spacing:.13em; }
 .aumora-kicker::before { content:""; width:6px; height:6px; background:#f4ba88; box-shadow:0 0 17px #f4ba8880; border-radius:50%; flex:none; }
 .aumora-title { font-size:clamp(60px,6.25vw,108px); font-weight:500; letter-spacing:-.065em; line-height:1.045; margin:0; }
 .aumora-title span { color:#b9cafa; }
-.aumora-description { font-size:clamp(16px,1.17vw,20px); line-height:1.7; color:#bfcbda; max-width:380px; margin:29px 0 0; }
+.aumora-description { font-size:clamp(18px,1.3vw,20px); line-height:1.7; color:#bfcbda; max-width:380px; margin:29px 0 0; }
 .aumora-actions { display:flex; align-items:center; gap:27px; margin-top:37px; }
-.aumora-primary { display:inline-flex; align-items:center; justify-content:space-between; gap:30px; min-height:53px; padding:0 25px; color:#111b2c; background:#edf2fb; border:1px solid #fff; border-radius:100px; font-size:11px; font-weight:650; letter-spacing:.075em; transition:background .2s,transform .2s; }
+.aumora-primary { display:inline-flex; align-items:center; justify-content:space-between; gap:30px; min-height:53px; padding:0 25px; color:#111b2c; background:#edf2fb; border:1px solid #fff; border-radius:100px; font-size:16px; font-weight:650; letter-spacing:.075em; transition:background .2s,transform .2s; }
 .aumora-primary:hover { background:#f4ba88; transform:translateY(-2px); }
 .aumora-primary span { font-size:21px; font-weight:400; }
-.aumora-secondary { display:inline-flex; align-items:center; gap:13px; min-height:48px; font-size:11px; letter-spacing:.06em; border-bottom:1px solid #e8f0ff55; }
+.aumora-secondary { display:inline-flex; align-items:center; gap:13px; min-height:48px; font-size:16px; letter-spacing:.06em; border-bottom:1px solid #e8f0ff55; }
 .aumora-secondary:hover { color:#f4ba88; }
 .aumora-bottom { position:absolute; z-index:7; bottom:34px; left:0; right:0; display:flex; align-items:flex-end; justify-content:space-between; gap:28px; }
 .aumora-capabilities { display:flex; gap:36px; }
 .aumora-capabilities a { display:grid; gap:6px; min-height:49px; padding-right:35px; border-right:1px solid #e8f0ff30; }
 .aumora-capabilities a:last-child { border:0; padding-right:0; }
-.aumora-capabilities small { font-size:9px; color:#9aaac0; letter-spacing:.14em; }
-.aumora-capabilities span { color:#d6e0ec; font-size:12px; letter-spacing:.025em; }
+.aumora-capabilities small { font-size:14px; color:#9aaac0; letter-spacing:.14em; }
+.aumora-capabilities span { color:#d6e0ec; font-size:16px; letter-spacing:.025em; }
 .aumora-capabilities a:hover span { color:#f4ba88; }
-.aumora-scroll { display:flex; align-items:center; gap:19px; min-height:48px; color:#c8d4e4; text-transform:uppercase; letter-spacing:.17em; font-size:9px; }
+.aumora-scroll { display:flex; align-items:center; gap:19px; min-height:48px; color:#c8d4e4; text-transform:uppercase; letter-spacing:.17em; font-size:14px; }
 .aumora-scroll span { font-size:20px; }
 
 .aumora-category-object { position:absolute; z-index:2; display:grid; justify-items:center; gap:8px; color:#d6e0ec; opacity:.8; filter:drop-shadow(0 14px 20px rgba(0,0,0,.3)); animation:category-float 8s ease-in-out infinite; }
-.aumora-category-object small { color:#b9cafa; font-size:9px; font-weight:650; letter-spacing:.16em; text-transform:uppercase; text-shadow:0 1px 12px #080d14; }
+.aumora-category-object small { color:#b9cafa; font-size:14px; font-weight:650; letter-spacing:.16em; text-transform:uppercase; text-shadow:0 1px 12px #080d14; }
 .object-glyph { position:relative; display:block; width:58px; height:42px; border:1px solid rgba(232,240,255,.7); background:linear-gradient(145deg,rgba(185,202,250,.4),rgba(24,39,65,.7)); box-shadow:inset 0 0 18px rgba(185,202,250,.18),0 0 24px rgba(120,140,255,.16); }
 .object-games { left:25%; top:25%; animation-delay:-1s; transform:rotate(-10deg); }
 .object-games .object-glyph { border-radius:20px 20px 15px 15px; transform:perspective(120px) rotateX(10deg); }
@@ -79,18 +79,18 @@
   .aumora-hero::before { background:linear-gradient(180deg,#080d1410 240px,#080d1400 310px,#080d14 475px); }
   .aumora-hero-content { padding-top:439px; padding-bottom:28px; }
   .aumora-copy { width:100%; max-width:550px; }
-  .aumora-kicker { font-size:8px; margin-bottom:20px; letter-spacing:.18em; }
+  .aumora-kicker { font-size:16px; margin-bottom:20px; letter-spacing:.1em; }
   .aumora-title { font-size:clamp(46px,11.8vw,76px); letter-spacing:-.055em; line-height:1.07; }
-  .aumora-description { font-size:15px; margin-top:21px; max-width:380px; }
+  .aumora-description { font-size:18px; margin-top:21px; max-width:380px; }
   .aumora-actions { gap:21px; margin-top:27px; flex-wrap:wrap; }
-  .aumora-primary { padding-inline:20px; gap:24px; font-size:10px; }
-  .aumora-secondary { font-size:10px; }
+  .aumora-primary { padding-inline:20px; gap:24px; font-size:16px; }
+  .aumora-secondary { font-size:16px; }
   .aumora-bottom { position:relative; bottom:auto; flex-direction:column; align-items:stretch; gap:16px; }
   .aumora-capabilities { gap:13px; justify-content:space-between; padding-top:23px; border-top:1px solid #e8f0ff25; }
   .aumora-capabilities a { padding-right:13px; }
-  .aumora-capabilities span { font-size:10px; }
-  .aumora-capabilities small { font-size:8px; }
-  .aumora-scroll { align-self:flex-end; font-size:8px; }
+  .aumora-capabilities span { font-size:16px; }
+  .aumora-capabilities small { font-size:14px; }
+  .aumora-scroll { align-self:flex-end; font-size:14px; }
   .aumora-category-object { opacity:.7; transform:scale(.75); }
   .object-games { left:8%; top:17%; }
   .object-software { right:5%; top:14%; }
@@ -112,4 +112,25 @@
 @media(prefers-reduced-motion:reduce) {
   .aumora-wordmark img,
   .aumora-scene { animation:none; }
+}
+
+/* The fast homepage uses the shared studio header above the original scene. */
+@media(min-width:901px) {
+  .home-page .aumora-hero { height:calc(100svh - 79px); min-height:780px; }
+}
+@media(max-width:900px) {
+  .home-page .aumora-scene { top:0; }
+  .home-page .aumora-hero-content { padding-top:362px; }
+  .home-page .aumora-hero { min-height:866px; }
+  .home-page .aumora-hero::before { background:linear-gradient(180deg,#080d1410 163px,#080d1400 233px,#080d14 398px); }
+}
+@media(prefers-reduced-motion:reduce) {
+  .aumora-category-object { animation:none; }
+}
+
+/* Let larger text wrap naturally instead of shrinking it on narrow screens. */
+@media(max-width:620px) {
+  .aumora-capabilities { flex-wrap:wrap; justify-content:flex-start; gap:20px; }
+  .aumora-capabilities a { flex:1 1 140px; border-right:0; padding-right:0; }
+  .aumora-scroll { letter-spacing:.1em; }
 }

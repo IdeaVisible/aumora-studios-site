@@ -6,17 +6,17 @@ Aumora Studios is a multidisciplinary software house delivering custom applicati
 
 ## Primary navigation
 
-1. Home
-2. Services
+- Home
+- Services (dropdown; direct links to each service)
    - Application Development
    - Web3 Development
    - Video Game Development
    - Interactive Experiences
    - Support & Maintenance
-3. Work / Current Projects
-4. Engagement Models
-5. About
-6. Contact / Start a Project
+- Portfolio
+- Engagement
+- About
+- Reach Out (button to the contact form)
 
 ## Core message hierarchy
 
@@ -30,12 +30,12 @@ Aumora Studios is a multidisciplinary software house delivering custom applicati
 
 For each future client project, use:
 
-1. The starting problem
-2. The users and operating context
-3. Aumora's responsibility
-4. The delivered system
-5. Difficult technical or product decisions
-6. Measurable outcome
-7. Ongoing support relationship, if applicable
+- The starting problem
+- The users and operating context
+- Aumora's responsibility
+- The delivered system
+- Difficult technical or product decisions
+- Measurable outcome
+- Ongoing support relationship, if applicable
 
 Avoid leading with a long technology list. Put technology in a compact secondary section after the outcome.

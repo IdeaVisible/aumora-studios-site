@@ -9,15 +9,14 @@ Open `index.html` directly in a browser, or serve the folder with any basic stat
 Example with Python:
 
 ```bash
-python -m http.server 8000
+python -m http.server 4173 --bind 127.0.0.1
 ```
 
-Then visit `http://localhost:8000` from inside this folder.
+Then visit `http://127.0.0.1:4173` from inside this folder.
 
 ## Public page structure
 
 - `index.html` — Home
-- `services.html` — Services overview
 - `application-development.html`
 - `web3-development.html`
 - `game-development.html`
@@ -36,16 +35,16 @@ Then visit `http://localhost:8000` from inside this folder.
 
 - `summary.html` — condensed site map, positioning logic and starter copy for every public page
 
-Remove the blueprint link from the footer before publishing the production site.
+The internal planning page is marked `noindex, nofollow` and excluded from public navigation.
 
 ## Important prototype notes
 
-1. The contact form is intentionally not connected to email or a CRM. Its submit handler only displays a local prototype message.
-2. Project descriptions and status labels should be reviewed before public launch.
-3. Add approved project imagery, a real domain, a studio email address and social links.
-4. Keep the studio-wide privacy policy and product supplements aligned with the actual hosting, integrations, data practices and audiences. Add any necessary cookie and terms notices when those details are known.
-5. The visible budget bands on the contact form are editable starter values, not pricing commitments.
-6. The site uses no external fonts or libraries, so it works offline and has a small delivery footprint.
+- The contact form prepares an email draft to `info@aumorastudios.com`, with a copy fallback. The visitor sends it through their email app. No backend delivery or storage is configured.
+- Project descriptions and status labels should be reviewed before public launch.
+- Add approved project imagery, a real domain, a studio email address and social links.
+- Keep the studio-wide privacy policy and product supplements aligned with the actual hosting, integrations, data practices and audiences. Add any necessary cookie and terms notices when those details are known.
+- The visible budget bands on the contact form are editable starter values, not pricing commitments.
+- Public pages use no external fonts or libraries. The homepage displays the existing 101 KB WebP scene immediately; the WebGL engine, model and textures only load in the preserved interactive `backup.html`.
 
 ## Privacy notices
 
@@ -71,3 +70,25 @@ Global styles are in `assets/styles.css`. The core brand variables sit at the to
 ## Deployment
 
 This folder can be deployed directly to Netlify, Cloudflare Pages, GitHub Pages, an S3-compatible static host, or a conventional web server. A dynamic form endpoint can be connected later without rewriting the rest of the site.
+
+## Homepage performance and original backup
+
+The live multi-page layout, full Aumora logo, font sizes and 0.55-second scroll reveal transitions are retained. All public headers use Home, Services, Portfolio, Engagement, About and a Reach Out button pointing to `contact.html#project-form`. Services opens an accessible dropdown with direct links to the five service pages; there is no separate overview page.
+
+`index.html` keeps the original giant-sculpture scene as `assets/3d/poster.webp`, with high fetch priority. It does not load `hero-loader.js`, `hero3d.bundle.js`, the GLB model or the interactive scene controls. Its sections use the same dark studio styling as the other pages. Above-the-fold text is immediately visible; off-screen sections retain their reveal transitions.
+
+`backup.html` preserves the original interactive homepage and references the original 3D assets. It is marked `noindex, nofollow` and is not linked from public navigation. Open it locally when comparing the old interactive version. Do not delete `assets/3d/`, `hero3d.bundle.js`, `hero-loader.js`, `hero3d.css` or `hero.js` while retaining this backup.
+
+Preview all changes locally before pushing to the existing Git remote. No deployment configuration has changed.
+
+## Portfolio images and Roblox links
+
+The featured order is PiCO Defenders: Toy Tower Defense, PiCO Paradise, PiCO Card Game, then Tillerion. The homepage highlights the three Roblox games; Aurena is omitted.
+
+The PiCO screenshots and artwork in `assets/projects/` come from the games' public Roblox listings, opened through the PiCO Community Creator Dashboard on 31 October 2026. Defenders uses a gameplay screenshot; Paradise and Card Game use their existing promotional thumbnails. All three images are local WebP files with explicit dimensions and lazy loading (about 312 KB combined).
+
+- PiCO Defenders: `https://www.roblox.com/games/93953719707297/PiCO-Defenders-Toy-Tower-Defense`
+- PiCO Paradise: `https://www.roblox.com/games/110658971379587/Pico-Paradise`
+- PiCO Card Game: `https://www.roblox.com/games/87038677431716/Pico-Card-Game`
+
+These public game links appear on both the homepage cards and the full portfolio entries. No Roblox dashboard metrics or account details are included in the website.

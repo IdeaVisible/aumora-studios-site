@@ -18,38 +18,41 @@
         <a class="brand" href="index.html" aria-label="Aumora Studios home">
           <img class="brand-logo" src="assets/aumora-logo-white.svg" alt="Aumora Studios" width="856" height="746">
         </a>
-        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-toggle>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation" data-menu-toggle>
           <span></span><span></span><span></span>
         </button>
-        <nav class="site-nav" aria-label="Primary navigation" data-site-nav>
-          <div class="nav-services-wrap">
-            <a class="nav-link" href="services.html" data-nav-file="services.html">Services</a>
-            <div class="service-menu" aria-label="Service pages">
-              <a href="services.html"><span>Services overview</span><small>All four practices</small></a><a href="application-development.html"><span>Application Development</span><small>Custom platforms, tools and automation</small></a><a href="web3-development.html"><span>Web3 Development</span><small>EVM products and integrations</small></a><a href="game-development.html"><span>Video Game Development</span><small>Games, systems and live operations</small></a><a href="interactive-experiences.html"><span>Interactive Experiences</span><small>Participatory digital products</small></a><a href="support-maintenance.html"><span>Support & Maintenance</span><small>Ongoing care and evolution</small></a>
-            </div>
-          </div>
+        <nav class="site-nav" id="site-navigation" aria-label="Primary navigation" data-site-nav>
           <a class="nav-link home-link" href="index.html" data-nav-file="index.html">Home</a>
-          <a class="nav-link" href="projects.html" data-nav-file="projects.html">Work</a>
+          <details class="nav-services-wrap" data-services-menu>
+            <summary class="nav-link" data-services-toggle>Services<span class="nav-chevron" aria-hidden="true"></span></summary>
+            <div class="service-menu" aria-label="Services">
+              <a href="application-development.html" data-nav-file="application-development.html"><span>Application Development</span><small>Custom software, portals and automation</small></a>
+              <a href="web3-development.html" data-nav-file="web3-development.html"><span>Web3 Development</span><small>Smart contracts, wallets and on-chain products</small></a>
+              <a href="game-development.html" data-nav-file="game-development.html"><span>Video Game Development</span><small>Playable prototypes, full games and live updates</small></a>
+              <a href="interactive-experiences.html" data-nav-file="interactive-experiences.html"><span>Interactive Experiences</span><small>Branded worlds, learning and simulations</small></a>
+              <a href="support-maintenance.html" data-nav-file="support-maintenance.html"><span>Support &amp; Maintenance</span><small>Ongoing care, fixes and product improvements</small></a>
+            </div>
+          </details>
+          <a class="nav-link" href="projects.html" data-nav-file="projects.html">Portfolio</a>
           <a class="nav-link" href="engagement-models.html" data-nav-file="engagement-models.html">Engagement</a>
           <a class="nav-link" href="about.html" data-nav-file="about.html">About</a>
-          <a class="nav-link" href="contact.html" data-nav-file="contact.html">Contact</a>
-          <a class="button button-small nav-cta" href="contact.html">Start a project</a>
+          <a class="button button-small nav-cta" href="contact.html#project-form">Reach Out</a>
         </nav>
       </div>
     </header>
 
       <main id="main">
 
-<section class="page-hero"><div class="shell narrow reveal"><p class="eyebrow">About Aumora Studios</p><h1>Serious systems engineering, with an instinct for <span>interaction.</span></h1><p class="hero-lead">Aumora Studios is a multidisciplinary software house built around a deliberate overlap: applications should be clear and engaging, while games and interactive products deserve durable architecture and disciplined delivery.</p></div></section>
+<section class="page-hero"><div class="shell narrow reveal"><p class="eyebrow">About Aumora Studios</p><h1>Serious systems engineering with an instinct for <span>interaction.</span></h1><p class="hero-lead">Aumora Studios is a multidisciplinary software house built around a deliberate overlap: applications should be clear and engaging, while games and interactive products deserve durable architecture and disciplined delivery.</p></div></section>
 <section class="section"><div class="shell about-statement reveal"><p class="eyebrow">Why Aumora</p><h2>Many valuable products sit between conventional categories.</h2><p>They combine software, data, real-time systems, identity, community and interaction. Splitting those concerns across disconnected suppliers creates gaps in ownership. Aumora brings them into one product conversation, one technical direction and one delivery roadmap.</p></div></section>
-<section class="section section-soft"><div class="shell split-heading reveal"><div><p class="eyebrow">Our working principles</p><h2>How we make broad capability feel focused.</h2></div><p>Expertise is not a list of every technology touched. It is the ability to make sound decisions, communicate trade-offs and take responsibility for the result.</p></div><div class="shell card-grid four">
-  <div class="value-card reveal"><span>01</span><h3>Build for use</h3><p>Prioritise the real workflow, player or audience behaviour over decorative feature volume.</p></div>
-  <div class="value-card reveal"><span>02</span><h3>Make complexity visible</h3><p>Expose assumptions, risks and choices early enough for them to remain manageable.</p></div>
-  <div class="value-card reveal"><span>03</span><h3>Design for ownership</h3><p>Leave systems understandable, documented and operable beyond the initial build.</p></div>
-  <div class="value-card reveal"><span>04</span><h3>Keep momentum</h3><p>Deliver working increments and preserve a clean route from launch into improvement.</p></div>
+<section class="section section-soft"><div class="shell split-heading reveal"><div><p class="eyebrow">Our working principles</p><h2>How we make broad capability feel focused.</h2></div><p>Expertise means making sound technical decisions, explaining trade-offs and taking responsibility for the result.</p></div><div class="shell card-grid four">
+  <div class="value-card reveal"><h3>Build for use</h3><p>Prioritise real workflows and player or audience behaviour over unnecessary features.</p></div>
+  <div class="value-card reveal"><h3>Make complexity visible</h3><p>Expose assumptions, risks and choices early enough for them to remain manageable.</p></div>
+  <div class="value-card reveal"><h3>Design for ownership</h3><p>Leave systems understandable, documented and operable beyond the initial build.</p></div>
+  <div class="value-card reveal"><h3>Keep momentum</h3><p>Deliver working increments and preserve a clean route from launch into improvement.</p></div>
 </div></section>
-<section class="section"><div class="shell split-heading reveal"><div><p class="eyebrow">What clients can expect</p><h2>Direct communication and accountable technical decisions.</h2></div><p>We aim to make the product easier to reason about at every stage. That means clear ownership, regular demonstrations, written decisions and no fog around what is complete, risky or changing.</p></div><div class="shell principle-grid"><div class="principle reveal"><h3>Product thinking</h3><p>We challenge scope when a simpler route produces a stronger outcome.</p></div><div class="principle reveal"><h3>Engineering discipline</h3><p>Architecture, testing and operations are considered before launch pressure arrives.</p></div><div class="principle reveal"><h3>Creative range</h3><p>We can move between enterprise clarity and playful interaction without treating either as an afterthought.</p></div></div></section>
-<section class="section section-dark"><div class="shell split-heading reveal"><div><p class="eyebrow">The position</p><h2>Not a generic agency. Not a single-tool contractor.</h2></div><p>Aumora is positioned as a product and engineering studio for substantial custom work: capable of delivering a one-off system, joining a larger programme or maintaining an evolving product over time.</p></div></section>
+<section class="section"><div class="shell split-heading reveal"><div><p class="eyebrow">What clients can expect</p><h2>Direct communication and accountable technical decisions.</h2></div><p>We aim to make the product easier to reason about at every stage. That means clear ownership, regular demonstrations, written decisions and a clear view of what is complete, at risk or changing.</p></div><div class="shell principle-grid"><div class="principle reveal"><h3>Product thinking</h3><p>We challenge scope when a simpler route produces a stronger outcome.</p></div><div class="principle reveal"><h3>Engineering discipline</h3><p>Architecture, testing and operations are considered before launch pressure arrives.</p></div><div class="principle reveal"><h3>Creative range</h3><p>We can move between enterprise clarity and playful interaction without treating either as an afterthought.</p></div></div></section>
+<section class="section section-dark"><div class="shell split-heading reveal"><div><p class="eyebrow">The position</p><h2>Not a generic agency. Not a single-tool contractor.</h2></div><p>Aumora is a product and engineering studio for substantial custom work: capable of delivering a one-off system, joining a larger programme or maintaining an evolving product over time.</p></div></section>
 <section class="section cta-section"><div class="shell cta-panel reveal"><p class="eyebrow">Work together</p><h2>Bring us a difficult product problem with a worthwhile outcome on the other side.</h2><a class="button" href="contact.html">Introduce the project</a></div></section>
 
       </main>
@@ -60,7 +63,7 @@
           <a class="brand brand-footer" href="index.html" aria-label="Aumora Studios home">
             <img class="brand-logo" src="assets/aumora-logo-white.svg" alt="Aumora Studios" width="856" height="746">
           </a>
-          <p>Custom software, games and interactive products, built as durable systems rather than disposable demos.</p>
+          <p>Custom software, games and interactive products built for reliable, long-term use.</p>
         </div>
         <div>
           <h2>Services</h2>
@@ -71,9 +74,9 @@
         </div>
         <div>
           <h2>Studio</h2>
-          <a href="projects.html">Current Projects</a>
-          <a href="engagement-models.html">Engagement Models</a>
-          <a href="support-maintenance.html">Support & Maintenance</a>
+          <a href="projects.html">Portfolio</a>
+          <a href="engagement-models.html">Engagement</a>
+          <a href="support-maintenance.html">Support &amp; Maintenance</a>
           <a href="about.html">About</a>
         </div>
         <div>
@@ -84,7 +87,7 @@
       </div>
       <div class="shell footer-base">
         <span>© <span data-year></span> Aumora Studios.</span>
-        <span class="footer-meta"><a href="privacy-policy.html">Privacy policy</a> · <a href="summary.html">Website blueprint</a></span>
+        <span class="footer-meta"><a href="privacy-policy.html">Privacy policy</a></span>
       </div>
     </footer>
 

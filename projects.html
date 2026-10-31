@@ -4,7 +4,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Projects &amp; Studio Work | Aumora Studios</title>
-      <meta name="description" content="Selected Aumora Studios projects spanning multiplayer games, card systems, social experiences and narrative games.">
+      <meta name="description" content="Explore PiCO Defenders, PiCO Paradise and PiCO Card Game on Roblox, alongside Tillerion, a narrative game in development.">
       <meta name="theme-color" content="#101722">
       <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
       <link rel="stylesheet" href="assets/styles.css">
@@ -18,35 +18,74 @@
         <a class="brand" href="index.html" aria-label="Aumora Studios home">
           <img class="brand-logo" src="assets/aumora-logo-white.svg" alt="Aumora Studios" width="856" height="746">
         </a>
-        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-toggle>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation" data-menu-toggle>
           <span></span><span></span><span></span>
         </button>
-        <nav class="site-nav" aria-label="Primary navigation" data-site-nav>
-          <div class="nav-services-wrap">
-            <a class="nav-link" href="services.html" data-nav-file="services.html">Services</a>
-            <div class="service-menu" aria-label="Service pages">
-              <a href="services.html"><span>Services overview</span><small>All four practices</small></a><a href="application-development.html"><span>Application Development</span><small>Custom platforms, tools and automation</small></a><a href="web3-development.html"><span>Web3 Development</span><small>EVM products and integrations</small></a><a href="game-development.html"><span>Video Game Development</span><small>Games, systems and live operations</small></a><a href="interactive-experiences.html"><span>Interactive Experiences</span><small>Participatory digital products</small></a><a href="support-maintenance.html"><span>Support & Maintenance</span><small>Ongoing care and evolution</small></a>
-            </div>
-          </div>
+        <nav class="site-nav" id="site-navigation" aria-label="Primary navigation" data-site-nav>
           <a class="nav-link home-link" href="index.html" data-nav-file="index.html">Home</a>
-          <a class="nav-link" href="projects.html" data-nav-file="projects.html">Work</a>
+          <details class="nav-services-wrap" data-services-menu>
+            <summary class="nav-link" data-services-toggle>Services<span class="nav-chevron" aria-hidden="true"></span></summary>
+            <div class="service-menu" aria-label="Services">
+              <a href="application-development.html" data-nav-file="application-development.html"><span>Application Development</span><small>Custom software, portals and automation</small></a>
+              <a href="web3-development.html" data-nav-file="web3-development.html"><span>Web3 Development</span><small>Smart contracts, wallets and on-chain products</small></a>
+              <a href="game-development.html" data-nav-file="game-development.html"><span>Video Game Development</span><small>Playable prototypes, full games and live updates</small></a>
+              <a href="interactive-experiences.html" data-nav-file="interactive-experiences.html"><span>Interactive Experiences</span><small>Branded worlds, learning and simulations</small></a>
+              <a href="support-maintenance.html" data-nav-file="support-maintenance.html"><span>Support &amp; Maintenance</span><small>Ongoing care, fixes and product improvements</small></a>
+            </div>
+          </details>
+          <a class="nav-link" href="projects.html" data-nav-file="projects.html">Portfolio</a>
           <a class="nav-link" href="engagement-models.html" data-nav-file="engagement-models.html">Engagement</a>
           <a class="nav-link" href="about.html" data-nav-file="about.html">About</a>
-          <a class="nav-link" href="contact.html" data-nav-file="contact.html">Contact</a>
-          <a class="button button-small nav-cta" href="contact.html">Start a project</a>
+          <a class="button button-small nav-cta" href="contact.html#project-form">Reach Out</a>
         </nav>
       </div>
     </header>
 
       <main id="main">
 
-<section class="page-hero"><div class="shell narrow reveal"><p class="eyebrow">Projects & studio work</p><h1>What we are <span>building now.</span></h1><p class="hero-lead">A selection of studio-owned games and interactive products in development. This page can later mix public client case studies with internal projects, using the same outcome-led structure.</p></div></section>
-<section class="section project-detail-section" id="pico-paradise"><div class="shell project-detail reveal"><div class="project-detail-visual visual-pico"><span>PiCO</span><b>PARADISE</b></div><div class="project-detail-copy"><div class="meta-row"><span>Multiplayer game universe · Roblox</span><span class="status dark-status">In development</span></div><h2>PiCO Paradise</h2><p class="lead-copy">A connected multiplayer universe built around a social hub, persistent progression and multiple destination experiences.</p><p>The product combines social spaces, quests, crafting, collection, faction systems and distinct game modes under one long-term player identity. The architecture is designed for live expansion rather than a single isolated release.</p><div class="contribution"><h3>Aumora focus</h3><ul><li>Cross-place architecture and persistent player data</li><li>Progression, inventory, quests and economy systems</li><li>Multiplayer game modes and live-operation foundations</li><li>Interface, onboarding and player feedback systems</li></ul></div></div></div></section>
-<section class="section project-detail-section section-soft" id="pico-card-game"><div class="shell project-detail reverse reveal"><div class="project-detail-visual visual-cards"><span>PICO</span><b>CARD GAME</b></div><div class="project-detail-copy"><div class="meta-row"><span>Competitive digital card game</span><span class="status dark-status">In development</span></div><h2>PICO Card Game</h2><p class="lead-copy">A fast best-of-three card battler built around one weapon, one shield and one character per round.</p><p>The design combines an immediately legible battle rule with collection, crafting, colour bonuses, character risk and competitive progression. Supporting systems include card packs, special cards, rewards and tournament architecture.</p><div class="contribution"><h3>Aumora focus</h3><ul><li>Core rules, battle flow and state management</li><li>Collection, crafting and reward progression</li><li>Competitive tables, dungeon and runner modes</li><li>Weekly tournament and claim architecture</li></ul></div></div></div></section>
-<section class="section project-detail-section" id="aurena"><div class="shell project-detail reveal"><div class="project-detail-visual visual-aurena"><span>AURENA</span><b>COLLECTIVE INFLUENCE</b></div><div class="project-detail-copy"><div class="meta-row"><span>Social interactive world</span><span class="status dark-status">Prototype</span></div><h2>Aurena</h2><p class="lead-copy">A social experience where collective participation visibly grows the influence of creator-led spaces.</p><p>Players choose a creator, contribute influence and bring wandering characters into a shared orbit. The world is designed to make community activity visible, playful and persistent rather than reducing participation to a passive counter.</p><div class="contribution"><h3>Aumora focus</h3><ul><li>Core participation loop and world-state design</li><li>Persistent creator statistics and shared updates</li><li>NPC behaviour and audience-growth mechanics</li><li>Visual identity, progression and commercial systems</li></ul></div></div></div></section>
-<section class="section project-detail-section section-soft" id="til"><div class="shell project-detail reverse reveal"><div class="project-detail-visual visual-til"><span>TIL</span><b>BEYOND THE QUIET MACHINES</b></div><div class="project-detail-copy"><div class="meta-row"><span>Narrative 2D side-scroller · Godot</span><span class="status dark-status">Pre-production</span></div><h2>Til</h2><p class="lead-copy">A narrative side-scroller moving through overgrown ruins, abandoned farms and sterile machine-controlled environments.</p><p>The project explores a small expressive machine travelling through a post-collapse world where older human systems and autonomous technology have grown apart. Production planning centres on reusable 2D systems, modular environments and strong visual storytelling.</p><div class="contribution"><h3>Aumora focus</h3><ul><li>World, character and gameplay concept development</li><li>Godot architecture and reusable scene systems</li><li>2D environment, parallax and asset pipeline planning</li><li>Movement, interaction and narrative delivery design</li></ul></div></div></div></section>
-<section class="section section-dark"><div class="shell split-heading reveal"><div><p class="eyebrow">Future case studies</p><h2>Client work should lead with outcomes, not a technology inventory.</h2></div><p>As approved projects become available, add concise case studies covering the starting problem, Aumora’s responsibility, the delivered system and measurable operational or user impact.</p></div></section>
-<section class="section cta-section"><div class="shell cta-panel reveal"><p class="eyebrow">Build with Aumora</p><h2>Have a software product, game or interactive idea that needs a serious delivery route?</h2><a class="button" href="contact.html">Discuss your project</a></div></section>
+<section class="page-hero"><div class="shell narrow reveal"><p class="eyebrow">Projects &amp; studio work</p><h1>What we are <span>building now.</span></h1><p class="hero-lead">A selection of studio-owned Roblox games and projects in development. Explore the concepts, systems and development work behind each project.</p></div></section>
+<section class="section project-detail-section" id="pico-defenders">
+  <div class="shell project-detail reveal">
+    <div class="project-detail-visual project-screenshot"><img src="assets/projects/pico-defenders.webp" alt="PiCO Defenders gameplay showing colourful defence machines and toy enemies on conveyor belts." width="768" height="432" loading="lazy" decoding="async"></div>
+    <div class="project-detail-copy">
+      <div class="meta-row"><span>Tower defence · Roblox</span><span class="status dark-status">Live</span></div>
+      <h2>PiCO Defenders: Toy Tower Defense</h2>
+      <p class="lead-copy">A toy-themed tower defence game on Roblox, built around conveyor-belt battles and upgradeable machines.</p>
+      <p>Build defences along branching routes, counter flying, speedy and armoured toys, and take on bigger bosses. Coins power each run, while gems unlock permanent improvements that carry into the next battle.</p>
+      <div class="contribution"><h3>Aumora focus</h3><ul><li>Conveyor-based enemy paths and branching routes</li><li>Upgradeable defence machines and enemy counters</li><li>Run-based currency and permanent progression</li><li>Level goals, boss encounters and replayability</li></ul></div>
+      <div class="button-row"><a class="button button-ghost" href="https://www.roblox.com/games/93953719707297/PiCO-Defenders-Toy-Tower-Defense" target="_blank" rel="noopener noreferrer" aria-label="View PiCO Defenders: Toy Tower Defense on Roblox (opens in a new tab)">View on Roblox <span aria-hidden="true">↗</span></a></div>
+    </div>
+  </div>
+</section>
+<section class="section project-detail-section section-soft" id="pico-paradise">
+  <div class="shell project-detail reverse reveal">
+    <div class="project-detail-visual project-screenshot"><img src="assets/projects/pico-paradise.webp" alt="PiCO Paradise Roblox artwork showing an island harbour, boats and a volcanic island." width="768" height="432" loading="lazy" decoding="async"></div>
+    <div class="project-detail-copy">
+      <div class="meta-row"><span>Social sandbox · Roblox</span><span class="status dark-status">Live</span></div>
+      <h2>PiCO Paradise</h2>
+      <p class="lead-copy">An open-world social sandbox on Roblox, with personal islands, crafting, exploration and connected adventures.</p>
+      <p>Players build and upgrade their island homes, travel by boat, craft equipment and discover loot and secrets. Connected destinations bring shooting, obstacle-course challenges and deep-sea exploration into the same persistent player journey.</p>
+      <div class="contribution"><h3>Aumora focus</h3><ul><li>Cross-place architecture and persistent player data</li><li>Island upgrades, crafting, quests and inventory systems</li><li>Connected game modes and exploration</li><li>Interface, onboarding and player feedback systems</li></ul></div>
+      <div class="button-row"><a class="button button-ghost" href="https://www.roblox.com/games/110658971379587/Pico-Paradise" target="_blank" rel="noopener noreferrer" aria-label="View PiCO Paradise on Roblox (opens in a new tab)">View on Roblox <span aria-hidden="true">↗</span></a></div>
+    </div>
+  </div>
+</section>
+<section class="section project-detail-section" id="pico-card-game">
+  <div class="shell project-detail reveal">
+    <div class="project-detail-visual project-screenshot"><img src="assets/projects/pico-card-game.webp" alt="PiCO Card Game Roblox artwork showing two players facing off across a glowing card table." width="767" height="432" loading="lazy" decoding="async"></div>
+    <div class="project-detail-copy">
+      <div class="meta-row"><span>Competitive card game · Roblox</span><span class="status dark-status">Live</span></div>
+      <h2>PiCO Card Game</h2>
+      <p class="lead-copy">A fast best-of-three card battler on Roblox, built around one weapon, one shield and one character per round.</p>
+      <p>The design combines clear battle rules with collection, crafting, colour bonuses, character risk and competitive progression. Supporting systems include card packs, special cards, daily rewards and weekly tournaments.</p>
+      <div class="contribution"><h3>Aumora focus</h3><ul><li>Core rules, battle flow and state management</li><li>Collection, crafting and reward progression</li><li>Competitive tables, dungeon and runner modes</li><li>Weekly tournaments and reward claims</li></ul></div>
+      <div class="button-row"><a class="button button-ghost" href="https://www.roblox.com/games/87038677431716/Pico-Card-Game" target="_blank" rel="noopener noreferrer" aria-label="View PiCO Card Game on Roblox (opens in a new tab)">View on Roblox <span aria-hidden="true">↗</span></a></div>
+    </div>
+  </div>
+</section>
+<section class="section project-detail-section section-soft" id="tillerion"><div class="shell project-detail reverse reveal"><div class="project-detail-visual visual-tillerion"><span>TILLERION</span><b>BEYOND THE QUIET MACHINES</b></div><div class="project-detail-copy"><div class="meta-row"><span>Narrative 2D side-scroller · Godot</span><span class="status dark-status">Pre-production</span></div><h2>Tillerion</h2><p class="lead-copy">A narrative side-scroller set among overgrown ruins, abandoned farms and sterile machine-controlled environments.</p><p>The project explores a small expressive machine travelling through a post-collapse world where older human systems and autonomous technology have grown apart. Production planning centres on reusable 2D systems, modular environments and strong visual storytelling.</p><div class="contribution"><h3>Aumora focus</h3><ul><li>World, character and gameplay concept development</li><li>Godot architecture and reusable scene systems</li><li>2D environment, parallax and asset pipeline planning</li><li>Movement, interaction and narrative delivery design</li></ul></div></div></div></section>
+<section class="section section-dark"><div class="shell split-heading reveal"><div><p class="eyebrow">Our approach</p><h2>Every project starts with a clear purpose.</h2></div><p>We connect the player or user experience with the systems needed to support it, from an early prototype to ongoing operation.</p></div></section>
+<section class="section cta-section"><div class="shell cta-panel reveal"><p class="eyebrow">Build with Aumora</p><h2>Have a software product, game or interactive idea that needs a clear path to delivery?</h2><a class="button" href="contact.html">Discuss your project</a></div></section>
 
       </main>
 
@@ -56,7 +95,7 @@
           <a class="brand brand-footer" href="index.html" aria-label="Aumora Studios home">
             <img class="brand-logo" src="assets/aumora-logo-white.svg" alt="Aumora Studios" width="856" height="746">
           </a>
-          <p>Custom software, games and interactive products, built as durable systems rather than disposable demos.</p>
+          <p>Custom software, games and interactive products built for reliable, long-term use.</p>
         </div>
         <div>
           <h2>Services</h2>
@@ -67,9 +106,9 @@
         </div>
         <div>
           <h2>Studio</h2>
-          <a href="projects.html">Current Projects</a>
-          <a href="engagement-models.html">Engagement Models</a>
-          <a href="support-maintenance.html">Support & Maintenance</a>
+          <a href="projects.html">Portfolio</a>
+          <a href="engagement-models.html">Engagement</a>
+          <a href="support-maintenance.html">Support &amp; Maintenance</a>
           <a href="about.html">About</a>
         </div>
         <div>
@@ -80,7 +119,7 @@
       </div>
       <div class="shell footer-base">
         <span>© <span data-year></span> Aumora Studios.</span>
-        <span class="footer-meta"><a href="privacy-policy.html">Privacy policy</a> · <a href="summary.html">Website blueprint</a></span>
+        <span class="footer-meta"><a href="privacy-policy.html">Privacy policy</a></span>
       </div>
     </footer>
 

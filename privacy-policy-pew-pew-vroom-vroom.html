@@ -13,34 +13,32 @@
 <body class="" data-page="privacy-policy-pew-pew-vroom-vroom.html">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header" data-header>
-    <div class="shell header-inner">
-      <a class="brand" href="index.html" aria-label="Aumora Studios home">
-        <img class="brand-logo" src="assets/aumora-logo-white.svg" alt="Aumora Studios" width="856" height="746">
-      </a>
-      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-toggle>
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="site-nav" aria-label="Primary navigation" data-site-nav>
-        <div class="nav-services-wrap">
-          <a class="nav-link" href="services.html" data-nav-file="services.html">Services</a>
-          <div class="service-menu" aria-label="Service pages">
-            <a href="services.html"><span>Services overview</span><small>All four practices</small></a>
-            <a href="application-development.html"><span>Application Development</span><small>Custom platforms, tools and automation</small></a>
-            <a href="web3-development.html"><span>Web3 Development</span><small>EVM products and integrations</small></a>
-            <a href="game-development.html"><span>Video Game Development</span><small>Games, systems and live operations</small></a>
-            <a href="interactive-experiences.html"><span>Interactive Experiences</span><small>Participatory digital products</small></a>
-            <a href="support-maintenance.html"><span>Support &amp; Maintenance</span><small>Ongoing care and evolution</small></a>
-          </div>
-        </div>
-        <a class="nav-link home-link" href="index.html" data-nav-file="index.html">Home</a>
-        <a class="nav-link" href="projects.html" data-nav-file="projects.html">Work</a>
-        <a class="nav-link" href="engagement-models.html" data-nav-file="engagement-models.html">Engagement</a>
-        <a class="nav-link" href="about.html" data-nav-file="about.html">About</a>
-        <a class="nav-link" href="contact.html" data-nav-file="contact.html">Contact</a>
-        <a class="button button-small nav-cta" href="contact.html">Start a project</a>
-      </nav>
-    </div>
-  </header>
+      <div class="shell header-inner">
+        <a class="brand" href="index.html" aria-label="Aumora Studios home">
+          <img class="brand-logo" src="assets/aumora-logo-white.svg" alt="Aumora Studios" width="856" height="746">
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation" data-menu-toggle>
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="site-navigation" aria-label="Primary navigation" data-site-nav>
+          <a class="nav-link home-link" href="index.html" data-nav-file="index.html">Home</a>
+          <details class="nav-services-wrap" data-services-menu>
+            <summary class="nav-link" data-services-toggle>Services<span class="nav-chevron" aria-hidden="true"></span></summary>
+            <div class="service-menu" aria-label="Services">
+              <a href="application-development.html" data-nav-file="application-development.html"><span>Application Development</span><small>Custom software, portals and automation</small></a>
+              <a href="web3-development.html" data-nav-file="web3-development.html"><span>Web3 Development</span><small>Smart contracts, wallets and on-chain products</small></a>
+              <a href="game-development.html" data-nav-file="game-development.html"><span>Video Game Development</span><small>Playable prototypes, full games and live updates</small></a>
+              <a href="interactive-experiences.html" data-nav-file="interactive-experiences.html"><span>Interactive Experiences</span><small>Branded worlds, learning and simulations</small></a>
+              <a href="support-maintenance.html" data-nav-file="support-maintenance.html"><span>Support &amp; Maintenance</span><small>Ongoing care, fixes and product improvements</small></a>
+            </div>
+          </details>
+          <a class="nav-link" href="projects.html" data-nav-file="projects.html">Portfolio</a>
+          <a class="nav-link" href="engagement-models.html" data-nav-file="engagement-models.html">Engagement</a>
+          <a class="nav-link" href="about.html" data-nav-file="about.html">About</a>
+          <a class="button button-small nav-cta" href="contact.html#project-form">Reach Out</a>
+        </nav>
+      </div>
+    </header>
 
   <main id="main">
     <section class="page-hero legal-hero">
@@ -63,7 +61,7 @@
 
         <h2>Advertising and third-party services</h2>
         <p>The game uses the Google Mobile Ads SDK to show full-screen ads between runs and optional rewarded ads. Version 1.08 uses Aumora Studios' AdMob ad units. Ad availability depends on connectivity, privacy requirements, available ads and Google's approval and serving limits. Gameplay remains available when ads cannot load.</p>
-        <p>Even when an ad is a test ad or is not personalized, the SDK may collect and share information with Google, including:</p>
+        <p>Even when an ad is a test ad or is not personalised, the SDK may collect and share information with Google, including:</p>
         <ul>
           <li>Your IP address, which can be used to estimate an approximate location.</li>
           <li>App and ad interactions, such as app launches, taps and video views.</li>
@@ -75,10 +73,10 @@
 
         <h2>Optional purchases</h2>
         <p>Optional permanent upgrades and repeatable Loot Packs use Google Play Billing. Google handles checkout, payment details and the purchase record under its own privacy policy. The game receives purchase information, including product identifiers, purchase tokens and signed receipts, to verify purchases, restore permanent unlocks and prevent duplicate Loot Pack delivery. Receipts and delivery records are stored in the app's private storage; a purchase-token hash is saved with credited loot. The game does not send them to an Aumora Studios server. Aumora Studios does not receive your payment-card details through the game.</p>
-        <p>Buying and restoring purchases require a connection to Google Play. Verified permanent unlocks cached on the device remain usable offline. Resetting gameplay preserves permanent unlocks but erases currencies, including purchased loot. Consumed Loot Packs cannot be restored after a reset, clearing app storage or reinstalling; this game has no cloud wallet. The app retains local delivery records across gameplay resets to prevent duplicate grants. Permanent unlocks and purchases still awaiting delivery can be restored using the purchasing Google Play account. Google controls the retention of its purchase records.</p>
+        <p>Buying and restoring purchases require a connection to Google Play. Verified permanent unlocks cached on the device remain usable offline. Resetting gameplay preserves permanent unlocks but erases currencies, including purchased loot. Consumed Loot Packs cannot be restored after resetting gameplay, clearing app storage or reinstalling the game; this game has no cloud wallet. The app retains local delivery records across gameplay resets to prevent duplicate grants. Permanent unlocks and purchases still awaiting delivery can be restored using the purchasing Google Play account. Google controls the retention of its purchase records.</p>
 
         <h2>Children and advertising settings</h2>
-        <p>The game's intended audience includes players aged 9 and older. This version applies child-directed treatment and under-age-of-consent settings to all ad requests, requests non-personalized ads, and sets the maximum ad content rating to G. It does not request Android Advertising ID access or precise or approximate device-location permissions. An IP address may still reveal an approximate location.</p>
+        <p>The game's intended audience includes players aged 9 and older. This version applies child-directed treatment and under-age-of-consent settings to all ad requests, requests non-personalised ads, and sets the maximum ad content rating to G. It does not request Android Advertising ID access or precise or approximate device-location permissions. An IP address may still reveal an approximate location.</p>
         <p>Google's User Messaging Platform checks applicable privacy requirements before live ads are requested. Where Google requires a privacy-options form, it is available under Settings → About &amp; Privacy → Ad Privacy Options. If the privacy requirements cannot be confirmed, the game continues without ads.</p>
         <p>The game does not ask players for names, dates of birth, email addresses or other game-account details. It has no chat or user profiles. Optional purchases use the device's Google Play account and its purchase-approval settings. Parents or guardians can contact us about privacy concerns at <a href="mailto:games@aumorastudios.com">games@aumorastudios.com</a>.</p>
 
@@ -112,7 +110,7 @@
         <a class="brand brand-footer" href="index.html" aria-label="Aumora Studios home">
           <img class="brand-logo" src="assets/aumora-logo-white.svg" alt="Aumora Studios" width="856" height="746">
         </a>
-        <p>Custom software, games and interactive products, built as durable systems rather than disposable demos.</p>
+        <p>Custom software, games and interactive products built for reliable, long-term use.</p>
       </div>
       <div>
         <h2>Services</h2>
@@ -123,8 +121,8 @@
       </div>
       <div>
         <h2>Studio</h2>
-        <a href="projects.html">Current Projects</a>
-        <a href="engagement-models.html">Engagement Models</a>
+        <a href="projects.html">Portfolio</a>
+        <a href="engagement-models.html">Engagement</a>
         <a href="support-maintenance.html">Support &amp; Maintenance</a>
         <a href="about.html">About</a>
       </div>
@@ -136,7 +134,7 @@
     </div>
     <div class="shell footer-base">
       <span>&copy; <span data-year></span> Aumora Studios.</span>
-      <span class="footer-meta"><a href="privacy-policy.html">Privacy policy</a> · <a href="summary.html">Website blueprint</a></span>
+      <span class="footer-meta"><a href="privacy-policy.html">Privacy policy</a></span>
     </div>
   </footer>
 </body>

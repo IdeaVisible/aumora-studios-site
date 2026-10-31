@@ -2,6 +2,7 @@
     <html lang="en">
     <head>
       <meta charset="utf-8">
+      <meta name="robots" content="noindex, nofollow">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Website Blueprint &amp; Copy Summary | Aumora Studios</title>
       <meta name="description" content="A compact planning map and starter-copy summary for every page in the Aumora Studios website prototype.">
@@ -18,47 +19,49 @@
         <a class="brand" href="index.html" aria-label="Aumora Studios home">
           <img class="brand-logo" src="assets/aumora-logo-white.svg" alt="Aumora Studios" width="856" height="746">
         </a>
-        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-toggle>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation" data-menu-toggle>
           <span></span><span></span><span></span>
         </button>
-        <nav class="site-nav" aria-label="Primary navigation" data-site-nav>
-          <div class="nav-services-wrap">
-            <a class="nav-link" href="services.html" data-nav-file="services.html">Services</a>
-            <div class="service-menu" aria-label="Service pages">
-              <a href="services.html"><span>Services overview</span><small>All four practices</small></a><a href="application-development.html"><span>Application Development</span><small>Custom platforms, tools and automation</small></a><a href="web3-development.html"><span>Web3 Development</span><small>EVM products and integrations</small></a><a href="game-development.html"><span>Video Game Development</span><small>Games, systems and live operations</small></a><a href="interactive-experiences.html"><span>Interactive Experiences</span><small>Participatory digital products</small></a><a href="support-maintenance.html"><span>Support & Maintenance</span><small>Ongoing care and evolution</small></a>
-            </div>
-          </div>
+        <nav class="site-nav" id="site-navigation" aria-label="Primary navigation" data-site-nav>
           <a class="nav-link home-link" href="index.html" data-nav-file="index.html">Home</a>
-          <a class="nav-link" href="projects.html" data-nav-file="projects.html">Work</a>
+          <details class="nav-services-wrap" data-services-menu>
+            <summary class="nav-link" data-services-toggle>Services<span class="nav-chevron" aria-hidden="true"></span></summary>
+            <div class="service-menu" aria-label="Services">
+              <a href="application-development.html" data-nav-file="application-development.html"><span>Application Development</span><small>Custom software, portals and automation</small></a>
+              <a href="web3-development.html" data-nav-file="web3-development.html"><span>Web3 Development</span><small>Smart contracts, wallets and on-chain products</small></a>
+              <a href="game-development.html" data-nav-file="game-development.html"><span>Video Game Development</span><small>Playable prototypes, full games and live updates</small></a>
+              <a href="interactive-experiences.html" data-nav-file="interactive-experiences.html"><span>Interactive Experiences</span><small>Branded worlds, learning and simulations</small></a>
+              <a href="support-maintenance.html" data-nav-file="support-maintenance.html"><span>Support &amp; Maintenance</span><small>Ongoing care, fixes and product improvements</small></a>
+            </div>
+          </details>
+          <a class="nav-link" href="projects.html" data-nav-file="projects.html">Portfolio</a>
           <a class="nav-link" href="engagement-models.html" data-nav-file="engagement-models.html">Engagement</a>
           <a class="nav-link" href="about.html" data-nav-file="about.html">About</a>
-          <a class="nav-link" href="contact.html" data-nav-file="contact.html">Contact</a>
-          <a class="button button-small nav-cta" href="contact.html">Start a project</a>
+          <a class="button button-small nav-cta" href="contact.html#project-form">Reach Out</a>
         </nav>
       </div>
     </header>
 
       <main id="main">
 
-<section class="page-hero blueprint-hero"><div class="shell narrow reveal"><p class="eyebrow">Internal planning page</p><h1>Aumora Studios website <span>blueprint.</span></h1><p class="hero-lead">A condensed map of the proposed public site, the purpose of each page and starter positioning copy. Keep this page out of the main navigation when the production site goes live.</p></div></section>
+<section class="page-hero blueprint-hero"><div class="shell narrow reveal"><p class="eyebrow">Internal planning page</p><h1>Aumora Studios website <span>blueprint.</span></h1><p class="hero-lead">An internal map of the website, the purpose of each page and its positioning copy. This planning reference is excluded from public navigation.</p></div></section>
 <section class="section"><div class="shell blueprint-grid">
-  <aside class="blueprint-tree reveal"><p class="eyebrow">Recommended navigation</p><h2>Site map</h2><ul class="site-tree"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a><ul><li><a href="application-development.html">Application Development</a></li><li><a href="web3-development.html">Web3 Development</a></li><li><a href="game-development.html">Video Game Development</a></li><li><a href="interactive-experiences.html">Interactive Experiences</a></li><li><a href="support-maintenance.html">Support & Maintenance</a></li></ul></li><li><a href="projects.html">Work / Current Projects</a></li><li><a href="engagement-models.html">Engagement Models</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact / Start a Project</a></li></ul><div class="blueprint-note"><strong>Later additions</strong><p>Insights, detailed case studies, careers, privacy, cookies and terms can be added when there is enough real content or a legal requirement.</p></div></aside>
+  <aside class="blueprint-tree reveal"><p class="eyebrow">Primary navigation</p><h2>Site map</h2><ul class="site-tree"><li><a href="index.html">Home</a></li><li><span>Services</span><ul><li><a href="application-development.html">Application Development</a></li><li><a href="web3-development.html">Web3 Development</a></li><li><a href="game-development.html">Video Game Development</a></li><li><a href="interactive-experiences.html">Interactive Experiences</a></li><li><a href="support-maintenance.html">Support &amp; Maintenance</a></li></ul></li><li><a href="projects.html">Portfolio</a></li><li><a href="engagement-models.html">Engagement</a></li><li><a href="about.html">About</a></li><li><a href="contact.html#project-form">Reach Out</a></li></ul><div class="blueprint-note"><strong>Later additions</strong><p>Insights, detailed case studies and careers pages can be added when there is enough approved content. Review cookie and terms notices as the site develops.</p></div></aside>
   <div class="blueprint-pages">
-    <article class="blueprint-card reveal"><span>01 · Home</span><h2>Position the studio in one sentence.</h2><p><strong>Starter copy:</strong> “Aumora Studios designs and builds custom applications, Web3 products, video games and interactive experiences. We can deliver a defined product from discovery to launch, or stay with it through a long-term engineering and maintenance partnership.”</p><p><strong>Page job:</strong> Establish credibility, show the four practices, surface current work and move qualified visitors toward the contact page.</p></article>
-    <article class="blueprint-card reveal"><span>02 · Services overview</span><h2>Make breadth feel coherent rather than generic.</h2><p><strong>Starter copy:</strong> “Aumora Studios combines software engineering, on-chain systems, game development and interaction design. Clients get a single accountable delivery partner, even when the product crosses technical boundaries.”</p><p><strong>Page job:</strong> Explain why the four disciplines belong together and route visitors to the relevant specialist page.</p></article>
-    <article class="blueprint-card reveal"><span>03 · Application Development</span><h2>Lead with operational outcomes.</h2><p><strong>Starter copy:</strong> “We design and build software around the way your organisation, customers and data actually work, from focused internal tools to full operational platforms.”</p><p><strong>Page job:</strong> Sell platforms, portals, data products, automation, APIs and backend engineering without sounding like a general freelance coding service.</p></article>
-    <article class="blueprint-card reveal"><span>04 · Web3 Development</span><h2>Position practical EVM expertise.</h2><p><strong>Starter copy:</strong> “We build EVM products and integrations where programmable ownership, transactions, access or incentives add measurable value to the experience.”</p><p><strong>Page job:</strong> Show smart-contract and dApp depth while distancing the studio from vague speculative positioning.</p></article>
-    <article class="blueprint-card reveal"><span>05 · Video Game Development</span><h2>Show production and systems depth.</h2><p><strong>Starter copy:</strong> “We design and build game systems from early prototype through live product, with particular strength in Roblox experiences, Godot 2D development, persistence, progression and connected game services.”</p><p><strong>Page job:</strong> Attract full builds, vertical slices, co-development and difficult systems work.</p></article>
-    <article class="blueprint-card reveal"><span>06 · Interactive Experiences</span><h2>Own the space between software, games and campaigns.</h2><p><strong>Starter copy:</strong> “We create branded worlds, gamified products, social experiences and simulations that give audiences something meaningful to do, discover and influence.”</p><p><strong>Page job:</strong> Capture briefs that are interactive but not necessarily conventional games.</p></article>
-    <article class="blueprint-card reveal"><span>07 · Work / Current Projects</span><h2>Use live studio work as proof of capability.</h2><p><strong>Starter copy:</strong> “A selection of studio-owned games and interactive products in development. This page can later mix public client case studies with internal projects, using the same outcome-led structure.”</p><p><strong>Page job:</strong> Show PiCO Paradise, PICO Card Game, Aurena and Til now, then gradually replace or supplement them with approved client case studies.</p></article>
-    <article class="blueprint-card reveal"><span>08 · Engagement Models</span><h2>Make buying the studio understandable.</h2><p><strong>Starter copy:</strong> “Choose the commercial shape that matches the certainty, scale and life stage of the product. Every route keeps scope, responsibilities and decision points visible.”</p><p><strong>Page job:</strong> Explain discovery, fixed-scope delivery, embedded partnership and maintenance without publishing rigid pricing.</p></article>
-    <article class="blueprint-card reveal"><span>09 · Support & Maintenance</span><h2>Turn post-launch work into a clear subscription offer.</h2><p><strong>Starter copy:</strong> “Aumora can remain accountable after release through a monthly support and evolution subscription, keeping the product stable while preserving momentum for useful improvements.”</p><p><strong>Page job:</strong> Present recurring revenue as product continuity, not an afterthought or vague hourly retainer.</p></article>
-    <article class="blueprint-card reveal"><span>10 · About</span><h2>Explain the studio logic, not an inflated biography.</h2><p><strong>Starter copy:</strong> “Aumora Studios is a multidisciplinary software house built around a deliberate overlap: applications should be clear and engaging, while games and interactive products deserve durable architecture and disciplined delivery.”</p><p><strong>Page job:</strong> Communicate principles, accountability and the advantage of connected disciplines. Add founder profiles later when ready.</p></article>
-    <article class="blueprint-card reveal"><span>11 · Contact</span><h2>Qualify serious briefs without creating friction.</h2><p><strong>Starter copy:</strong> “The strongest first brief explains the problem, the people affected, the constraints and the outcome. We can help shape the product and technical route from there.”</p><p><strong>Page job:</strong> Collect enough context to identify fit, scale and the most efficient next engagement.</p></article>
+    <article class="blueprint-card reveal"><span>Home</span><h2>Position the studio in one sentence.</h2><p><strong>Starter copy:</strong> “Aumora Studios designs and builds custom applications, Web3 products, video games and interactive experiences. We can deliver a defined product from discovery to launch, or stay with it through a long-term engineering and maintenance partnership.”</p><p><strong>Page job:</strong> Establish credibility, show the four practices, surface current work and move qualified visitors toward the contact page.</p></article>
+    <article class="blueprint-card reveal"><span>Application Development</span><h2>Lead with operational outcomes.</h2><p><strong>Starter copy:</strong> “We design and build software around the way your organisation, customers and data actually work, from focused internal tools to full operational platforms.”</p><p><strong>Page job:</strong> Sell platforms, portals, data products, automation, APIs and backend engineering without sounding like a general freelance coding service.</p></article>
+    <article class="blueprint-card reveal"><span>Web3 Development</span><h2>Position practical EVM expertise.</h2><p><strong>Starter copy:</strong> “We build EVM products and integrations where programmable ownership, transactions, access or incentives add measurable value to the experience.”</p><p><strong>Page job:</strong> Show smart-contract and dApp depth while distancing the studio from vague speculative positioning.</p></article>
+    <article class="blueprint-card reveal"><span>Video Game Development</span><h2>Show production and systems depth.</h2><p><strong>Starter copy:</strong> “We design and build game systems from early prototype through live product, with particular strengths in Roblox experiences, Godot 2D development, persistence, progression and connected game services.”</p><p><strong>Page job:</strong> Attract full builds, vertical slices, co-development and difficult systems work.</p></article>
+    <article class="blueprint-card reveal"><span>Interactive Experiences</span><h2>Own the space between software, games and campaigns.</h2><p><strong>Starter copy:</strong> “We create branded worlds, gamified products, social experiences and simulations that give audiences something meaningful to do, discover and influence.”</p><p><strong>Page job:</strong> Capture briefs that are interactive but not necessarily conventional games.</p></article>
+    <article class="blueprint-card reveal"><span>Portfolio</span><h2>Use live studio work as proof of capability.</h2><p><strong>Starter copy:</strong> “A selection of studio-owned Roblox games and projects in development. Explore the concepts, systems and development work behind each project.”</p><p><strong>Page job:</strong> Feature PiCO Defenders: Toy Tower Defense, PiCO Paradise, PiCO Card Game and Tillerion, then add approved client case studies as they become available.</p></article>
+    <article class="blueprint-card reveal"><span>Engagement</span><h2>Make working with the studio straightforward.</h2><p><strong>Starter copy:</strong> “Choose the engagement model that matches the scope, scale and stage of your product. Every route keeps scope, responsibilities and decision points visible.”</p><p><strong>Page job:</strong> Explain discovery, fixed-scope delivery, embedded partnership and maintenance without publishing rigid pricing.</p></article>
+    <article class="blueprint-card reveal"><span>Support &amp; Maintenance</span><h2>Turn post-launch work into a clear subscription offer.</h2><p><strong>Starter copy:</strong> “Aumora can remain accountable after release through a monthly support and evolution subscription, keeping the product stable while preserving momentum for useful improvements.”</p><p><strong>Page job:</strong> Present recurring revenue as product continuity, not an afterthought or vague hourly retainer.</p></article>
+    <article class="blueprint-card reveal"><span>About</span><h2>Explain the studio logic, not an inflated biography.</h2><p><strong>Starter copy:</strong> “Aumora Studios is a multidisciplinary software house built around a deliberate overlap: applications should be clear and engaging, while games and interactive products deserve durable architecture and disciplined delivery.”</p><p><strong>Page job:</strong> Communicate principles, accountability and the advantage of connected disciplines. Add founder profiles later when ready.</p></article>
+    <article class="blueprint-card reveal"><span>Reach Out</span><h2>Qualify serious briefs without creating friction.</h2><p><strong>Starter copy:</strong> “The strongest first brief explains the problem, the people affected, the constraints and the outcome. We can help shape the product and technical route from there.”</p><p><strong>Page job:</strong> Collect enough context to identify fit, scale and the most efficient next engagement.</p></article>
   </div>
 </div></section>
 <section class="section section-dark"><div class="shell split-heading reveal"><div><p class="eyebrow">Core positioning</p><h2>How to sound broad without sounding unfocused.</h2></div><p>Do not describe Aumora as a “jack of all trades.” Present it as one software house with four connected practices, unified by product architecture, delivery discipline and ongoing ownership.</p></div><div class="shell card-grid three compact-cards"><div class="dark-card reveal"><h3>Primary promise</h3><p>Custom digital products taken from uncertainty to reliable operation.</p></div><div class="dark-card reveal"><h3>Commercial promise</h3><p>A one-off build or a continuing engineering and maintenance partnership.</p></div><div class="dark-card reveal"><h3>Proof strategy</h3><p>Show working projects, concrete responsibilities, system depth and outcome-led case studies.</p></div></div></section>
-<section class="section"><div class="shell launch-checklist reveal"><p class="eyebrow">Before publishing</p><h2>Replace prototype elements.</h2><ul class="check-list two-column-checks"><li>Connect the contact form to email, CRM or a secure form endpoint.</li><li>Confirm the production domain, studio email and social links.</li><li>Add real project imagery and only approved client claims.</li><li>Review status labels and project descriptions for confidentiality.</li><li>Add privacy, cookies and terms pages appropriate to the launch setup.</li><li>Set page URLs, canonical tags, Open Graph images and analytics.</li><li>Test keyboard navigation, contrast, forms and mobile layouts.</li><li>Remove the blueprint link from the public footer.</li></ul></div></section>
+<section class="section"><div class="shell launch-checklist reveal"><p class="eyebrow">Future updates</p><h2>Keep the site ready for its next release.</h2><ul class="check-list two-column-checks"><li>If direct form delivery is needed, connect a secure form endpoint; the current form prepares an email draft.</li><li>Confirm the production domain, studio email and social links.</li><li>Add real project imagery and only approved client claims.</li><li>Review status labels and project descriptions for confidentiality.</li><li>Keep privacy notices aligned with the site and products, and review any cookie or terms requirements.</li><li>Review page URLs, canonical tags and sharing images. Assess analytics only if needed.</li><li>Test keyboard navigation, contrast, forms and mobile layouts.</li><li>Keep this planning page out of public navigation.</li></ul></div></section>
 
       </main>
 
@@ -68,7 +71,7 @@
           <a class="brand brand-footer" href="index.html" aria-label="Aumora Studios home">
             <img class="brand-logo" src="assets/aumora-logo-white.svg" alt="Aumora Studios" width="856" height="746">
           </a>
-          <p>Custom software, games and interactive products, built as durable systems rather than disposable demos.</p>
+          <p>Custom software, games and interactive products built for reliable, long-term use.</p>
         </div>
         <div>
           <h2>Services</h2>
@@ -79,9 +82,9 @@
         </div>
         <div>
           <h2>Studio</h2>
-          <a href="projects.html">Current Projects</a>
-          <a href="engagement-models.html">Engagement Models</a>
-          <a href="support-maintenance.html">Support & Maintenance</a>
+          <a href="projects.html">Portfolio</a>
+          <a href="engagement-models.html">Engagement</a>
+          <a href="support-maintenance.html">Support &amp; Maintenance</a>
           <a href="about.html">About</a>
         </div>
         <div>
@@ -92,7 +95,7 @@
       </div>
       <div class="shell footer-base">
         <span>© <span data-year></span> Aumora Studios.</span>
-        <span class="footer-meta"><a href="privacy-policy.html">Privacy policy</a> · <a href="summary.html">Website blueprint</a></span>
+        <span class="footer-meta"><a href="privacy-policy.html">Privacy policy</a></span>
       </div>
     </footer>
 
