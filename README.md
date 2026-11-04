@@ -14,6 +14,8 @@ python -m http.server 4173 --bind 127.0.0.1
 
 Then visit `http://127.0.0.1:4173` from inside this folder.
 
+The local preview opens `index.html` by default.
+
 ## Public page structure
 
 - `index.html` — Home
